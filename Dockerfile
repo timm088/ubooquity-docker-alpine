@@ -12,13 +12,13 @@ RUN apk -U upgrade && \
       wget \
       openjdk8-jre-lib \
       curl \
-      unzip
-
-RUN addgroup -S media && adduser -S media -G media && \
+      unzip && \
+\
+    addgroup -S media && adduser -S media -G media && \
     mkdir /data /comics && \
-    chown -R media:media /data /comics
-
-RUN export UBOOQUITY_VERSIION=2.0.2 && \
+    chown -R media:media /data /comics && \
+\
+    export UBOOQUITY_VERSIION=2.0.2 && \
     wget https://vaemendis.net/ubooquity/downloads/Ubooquity-${UBOOQUITY_VERSIION}.zip && \
     unzip /Ubooquity-${UBOOQUITY_VERSIION}.zip -d /ubooquity && \
     rm /Ubooquity-${UBOOQUITY_VERSIION}.zip && \
