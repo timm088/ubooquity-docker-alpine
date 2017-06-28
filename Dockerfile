@@ -16,13 +16,13 @@ RUN apk -U upgrade && \
 \
     adduser -u 1001 -S media -G users && \
     mkdir /data /comics && \
-    chown -R media:media /data /comics && \
+    chown -R media:users /data /comics && \
 \
     export UBOOQUITY_VERSIION=2.0.2 && \
     wget https://vaemendis.net/ubooquity/downloads/Ubooquity-${UBOOQUITY_VERSIION}.zip && \
     unzip /Ubooquity-${UBOOQUITY_VERSIION}.zip -d /ubooquity && \
     rm /Ubooquity-${UBOOQUITY_VERSIION}.zip && \
-    chown -R media:media /ubooquity
+    chown -R media:users /ubooquity
 
 EXPOSE 2202 2502
 
