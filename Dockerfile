@@ -1,8 +1,6 @@
 FROM alpine:3.6
 
-ENV LANG='en_AU.UTF-8' \
-    LANGUAGE='en_AU.UTF-8' \
-    JAVA_HOME="/usr/lib/jvm/java-1.8-openjdk/bin/java"
+ENV JAVA_HOME="/usr/lib/jvm/java-1.8-openjdk/bin/java"
 
 RUN apk -U upgrade && \
     apk add --no-cache \
@@ -10,6 +8,7 @@ RUN apk -U upgrade && \
       ca-certificates \
       openssl \
       wget \
+      tzdata \
       openjdk8-jre-lib \
       curl \
       unzip && \
