@@ -17,7 +17,7 @@ RUN apk -U upgrade && \
     mkdir /data /comics && \
     chown -R media:users /data /comics && \
 \
-    export UBOOQUITY_VERSIION=2.0.2 && \
+    export UBOOQUITY_VERSIION=2.1.1 && \
     wget https://vaemendis.net/ubooquity/downloads/Ubooquity-${UBOOQUITY_VERSIION}.zip && \
     unzip /Ubooquity-${UBOOQUITY_VERSIION}.zip -d /ubooquity && \
     rm /Ubooquity-${UBOOQUITY_VERSIION}.zip && \
