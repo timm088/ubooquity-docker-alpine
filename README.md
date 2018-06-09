@@ -1,6 +1,6 @@
 # About
 
-This repository contains artifacts for building a Couchpotato Docker Image on Alpine Linux.
+This repository contains artifacts for building a Ubooquity Docker Image on Alpine Linux.
 
 It is kept as minimal as possible and uses volumes.
 
@@ -17,3 +17,4 @@ To run the docker container ensure your run command has the required volumes you
 ## History
 
 - 22-06-17: First release, alpine 3.6
+- 09-06-18: Bump to alpine 3.7
